@@ -38,7 +38,7 @@ export async function main(ns) {
         const liberties1 = [n, s, e, w];
         for (let board1 of boards1) {
           for (let libertie1 of liberties1) {
-            if (isValidMove && board1 === 'O' && libertie1 === 1 && con !== 'X') {
+            if (isValidMove && board1 === 'O' && libertie1 === 1 && con === '?') {
               moveOptions.push([x, y]);
             }
           }
